@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Wifi Mouse</string>
+    <string name="ip_text">IP: </string>
+    <string name="ip_hint">IP address of PC </string>
+    <string name="port_text">PORT: </string>
+    <string name="port_hint">5007 </string>
+    <string name="connect">CONNECT</string>
+</resources>

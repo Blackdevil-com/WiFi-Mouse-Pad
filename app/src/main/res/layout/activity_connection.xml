@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_point5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".4" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_horizontal_60"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_vertical_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent=".3"/>
+    <TextView
+        android:id="@+id/IpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ip_text"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_50"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_30"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_point5"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_40" />
+
+    <EditText
+        android:id="@+id/IpTextEdit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:hint="@string/ip_hint"
+        android:padding="10dp"
+        android:inputType="text"
+        android:background="@drawable/stoke_rectangle"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_30"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_40" />
+
+    <TextView
+        android:id="@+id/PortText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/port_text"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_60"
+        app:layout_constraintEnd_toStartOf="@id/guideline_vertical_30"
+        app:layout_constraintStart_toStartOf="@+id/guideline_vertical_point5"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_50" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:id="@+id/PortTextEdit"
+        android:background="@drawable/stoke_rectangle"
+        android:hint="@string/port_hint"
+        android:inputType="number"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal_60"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline_vertical_30"
+        app:layout_constraintTop_toTopOf="@+id/guideline_horizontal_50" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/connetBtn"
+        android:text="@string/connect"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guideline_horizontal_60"/>
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
